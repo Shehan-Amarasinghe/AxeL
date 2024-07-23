@@ -10,8 +10,8 @@ const Footer = () => {
   const year = new Date().getFullYear();
   return (
     <div>
-      <div className="sm:grid-cols-2 grid grid-cols-4 gap-0 items-center justify-items-center">
-        <div className="sm:w-full sm:pl-8 h-64 mx-auto pl-24">
+      <div className="grid items-center grid-cols-4 gap-0 sm:grid-cols-2 justify-items-center">
+        <div className="h-64 pl-24 mx-auto sm:w-full sm:pl-8">
           <div>
             <img className="h-10 cursor-pointer" src={logo} alt="logo"></img>
           </div>
@@ -30,42 +30,42 @@ const Footer = () => {
             ></img>
           </div>
         </div>
-        <div className="sm:pr-4 h-64">
-          <h3 className="text-dark font-inter font-medium text-lg no-underline align-middle tracking-wide normal-case">
+        <div className="h-64 sm:pr-4">
+          <h3 className="text-lg font-medium tracking-wide no-underline normal-case align-middle text-dark font-inter">
             Features
           </h3>
           {FooterData1.map((item) => {
             return (
               <div key={item.id}>
-                <p className="text-dark font-inter text-md font-normal cursor-pointer no-underline align-middle tracking-wide normal-case">
+                <p className="font-normal tracking-wide no-underline normal-case align-middle cursor-pointer text-dark font-inter text-md">
                   {item.text}
                 </p>
               </div>
             );
           })}
         </div>
-        <div className="sm:pr-8 h-64">
-          <h3 className="text-dark font-inter font-medium text-lg no-underline align-middle tracking-wide normal-case">
+        <div className="h-64 sm:pr-8">
+          <h3 className="text-lg font-medium tracking-wide no-underline normal-case align-middle text-dark font-inter">
             Features
           </h3>
           {FooterData2.map((item) => {
             return (
               <div key={item.id}>
-                <p className="text-dark font-inter text-md font-normal cursor-pointer no-underline align-middle tracking-wide normal-case">
+                <p className="font-normal tracking-wide no-underline normal-case align-middle cursor-pointer text-dark font-inter text-md">
                   {item.text}
                 </p>
               </div>
             );
           })}
         </div>
-        <div className="sm:pl-8 h-64">
-          <h3 className="text-dark font-inter font-medium text-lg no-underline align-middle tracking-wide normal-case">
+        <div className="h-64 sm:pl-8">
+          <h3 className="text-lg font-medium tracking-wide no-underline normal-case align-middle text-dark font-inter">
             Features
           </h3>
           {FooterData3.map((item) => {
             return (
               <div key={item.id}>
-                <p className="text-dark font-inter text-md font-normal cursor-pointer no-underline align-middle tracking-wide normal-case">
+                <p className="font-normal tracking-wide no-underline normal-case align-middle cursor-pointer text-dark font-inter text-md">
                   {item.text}
                 </p>
               </div>
@@ -74,17 +74,17 @@ const Footer = () => {
         </div>
       </div>
       <div className="flex items-center justify-center">
-        <hr className="sm:w-full h-px w-4/5 bg-gray-400 opacity-50 outline-none border-none" />
+        <hr className="w-4/5 h-px bg-gray-400 border-none outline-none opacity-50 sm:w-full" />
       </div>
-      <div className="flex justify-around items-center py-6">
+      <div className="flex items-center justify-around py-6">
         <div>
-          <p className="sm:text-sm text-dark pb-2 font-inter font-medium cursor-pointer no-underline align-middle tracking-wide normal-case">
+          <p className="pb-2 font-medium tracking-wide no-underline normal-case align-middle cursor-pointer sm:text-sm text-dark font-inter">
             AxeL
           </p>
         </div>
         <div>
-          <p className="sm:text-xs text-dark pb-2 font-inter font-light cursor-pointer no-underline align-middle tracking-wide normal-case">
-            Copyright {year} page by Marko Web Dev
+          <p className="pb-2 font-light tracking-wide no-underline normal-case align-middle cursor-pointer sm:text-xs text-dark font-inter">
+            Copyright {year} page by Shehan web Dev
           </p>
         </div>
       </div>
